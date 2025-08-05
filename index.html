@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mama Njeri's Kitchen | Authentic Kitchen Cuisines</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <link
       rel="icon"
       href="./images/mama-njeri-restaurant-favicon.png"
@@ -28,19 +28,35 @@
         </div>
 
         <nav class="nav">
+          <!-- The checkbox controls menu visibility -->
           <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+
+          <!-- Hamburger icon for mobile -->
           <label for="nav-toggle" class="hamburger">
             <span></span>
             <span></span>
             <span></span>
           </label>
 
+          <!-- Menu items with close functionality -->
           <ul class="nav-list">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <!-- Close button (x) at the top of menu -->
+            <label for="nav-toggle" class="close-menu">&times;</label>
+            <li>
+              <label for="nav-toggle"><a href="#home">Home</a></label>
+            </li>
+            <li>
+              <label for="nav-toggle"><a href="#menu">Menu</a></label>
+            </li>
+            <li>
+              <label for="nav-toggle"><a href="#about">About</a></label>
+            </li>
+            <li>
+              <label for="nav-toggle"><a href="#gallery">Gallery</a></label>
+            </li>
+            <li>
+              <label for="nav-toggle"><a href="#contact">Contact</a></label>
+            </li>
           </ul>
         </nav>
       </div>
@@ -70,10 +86,7 @@
 
         <div class="dishes-grid">
           <div class="dish-card">
-            <img
-              src="./images/nyama-choma.jpg"
-              alt="Nyama Choma"
-            />
+            <img src="./images/nyama-choma.jpg" alt="Nyama Choma" />
             <h3>Nyama Choma</h3>
             <p>
               Succulent grilled goat meat marinated with our secret spices,
@@ -83,10 +96,7 @@
           </div>
 
           <div class="dish-card">
-            <img
-              src="./images/ugali-skuma.jpg"
-              alt="Ugali with Sukuma Wiki"
-            />
+            <img src="./images/ugali-skuma.jpg" alt="Ugali with Sukuma Wiki" />
             <h3>Ugali & Sukuma</h3>
             <p>
               Kenya's staple food served with sautéed kale, tomatoes, and
@@ -96,10 +106,7 @@
           </div>
 
           <div class="dish-card">
-            <img
-              src="./images/mama's-pilau.jpg"
-              alt="Pilau"
-            />
+            <img src="./images/mama's-pilau.jpg" alt="Pilau" />
             <h3>Mama's Pilau</h3>
             <p>
               Fragrant rice cooked with beef, spices, and potatoes - a Swahili
@@ -109,10 +116,7 @@
           </div>
 
           <div class="dish-card">
-            <img
-              src="./images/kenyan-tea.jpg"
-              alt="Kenyan Tea"
-            />
+            <img src="./images/kenyan-tea.jpg" alt="Kenyan Tea" />
             <h3>Kenyan Tea</h3>
             <p>
               A perfect blend of black tea, milk, and spices, served hot with
@@ -150,10 +154,79 @@
           </div>
 
           <div class="about-image">
+            <img src="./images/mama-njeri.jpg" alt="Mama Njeri cooking" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <h2 class="section-title">Our Restaurant Gallery</h2>
+        <p class="section-subtitle">
+          Experience our warm atmosphere and delicious meals
+        </p>
+
+        <div class="gallery-grid">
+          <!-- Restaurant Interior -->
+          <div class="gallery-item">
             <img
-              src="./images/mama-njeri.jpg"
-              alt="Mama Njeri cooking"
+              src="./images/gallery1.jpg"
+              alt="Mama Njeri's cozy dining area"
             />
+            <div class="gallery-overlay">
+              <h3>Cozy Dining Area</h3>
+            </div>
+          </div>
+
+          <!-- Food Preparation -->
+          <div class="gallery-item">
+            <img
+              src="./images/gallery2.jpg"
+              alt="Chefs preparing nyama choma"
+            />
+            <div class="gallery-overlay">
+              <h3>Food Preparation</h3>
+            </div>
+          </div>
+
+          <!-- Outdoor Seating -->
+          <div class="gallery-item">
+            <img
+              src="./images/gallery3.jpg"
+              alt="Outdoor seating area"
+            />
+            <div class="gallery-overlay">
+              <h3>Outdoor Seating</h3>
+            </div>
+          </div>
+
+          <!-- Dish Close-up -->
+          <div class="gallery-item">
+            <img
+              src="./images/gallery4.jpg"
+              alt="Beautifully presented pilau"
+            />
+            <div class="gallery-overlay">
+              <h3>Dish Presentation</h3>
+            </div>
+          </div>
+
+          <!-- Chef Portrait -->
+          <div class="gallery-item">
+            <img src="./images/mama-njeri.jpg" alt="Mama Njeri cooking" />
+            <div class="gallery-overlay">
+              <h3>Our Chef</h3>
+            </div>
+          </div>
+
+          <!-- Group Dining -->
+          <div class="gallery-item">
+            <img src="./images/gallery6.jpg" alt="Happy customers dining" />
+            <div class="gallery-overlay">
+              <h3>Happy Customers</h3>
+            </div>
           </div>
         </div>
       </div>
@@ -172,10 +245,7 @@
               grandmother used to make."
             </p>
             <div class="customer">
-              <img
-                src="./images/james-mwangi.jpg"
-                alt="Customer"
-              />
+              <img src="./images/james-mwangi.jpg" alt="Customer" />
               <span>James Mwangi</span>
             </div>
           </div>
@@ -187,10 +257,7 @@
               flavors are still consistent."
             </p>
             <div class="customer">
-              <img
-                src="./images/Sarah-Ochieng.jpg"
-                alt="Customer"
-              />
+              <img src="./images/Sarah-Ochieng.jpg" alt="Customer" />
               <span>Sarah Ochieng</span>
             </div>
           </div>
@@ -202,10 +269,7 @@
               very generous portions."
             </p>
             <div class="customer">
-              <img
-                src="./images/abdul-karim.jpg"
-                alt="Customer"
-              />
+              <img src="./images/abdul-karim.jpg" alt="Customer" />
               <span>Abdul Karim</span>
             </div>
           </div>
