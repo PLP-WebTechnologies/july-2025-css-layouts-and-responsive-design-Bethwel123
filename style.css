@@ -128,6 +128,16 @@ img {
 .logo h1 {
   font-size: 1.8rem;
   color: var(--primary-color);
+  font-family: "Akronim", sans-serif;
+}
+
+.logo h1:hover {
+  color: var(--white);
+  border: var(--primary-color) 2px solid;
+  border-radius: 5px;
+  padding: 5px 10px;
+  transition: var(--transition);
+  background-color: var(--primary-color);
 }
 
 .logo p {
@@ -144,6 +154,7 @@ img {
 .nav-list {
   display: flex;
   list-style: none;
+  margin-right: 200px;
 }
 
 .nav-list li {
@@ -171,7 +182,7 @@ img {
 }
 
 .close-menu {
-color: var(--white);
+  color: var(--white);
 }
 
 .hamburger span {
@@ -346,7 +357,7 @@ cite {
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
   color: var(--white);
   padding: 20px;
   opacity: 0;
@@ -567,7 +578,7 @@ cite {
     font-size: 1.1rem;
   }
 
-.close-menu {
+  .close-menu {
     position: absolute;
     top: 1px;
     right: 75px;
@@ -588,7 +599,7 @@ cite {
     left: 0;
   }
 
-    /* Hide checkbox */
+  /* Hide checkbox */
   .nav-toggle {
     position: absolute;
     opacity: 0;
@@ -614,7 +625,7 @@ cite {
     flex: 1;
   }
 
-    .gallery-grid {
+  .gallery-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 }
