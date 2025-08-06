@@ -478,6 +478,7 @@ cite {
   background-color: var(--dark-color);
   color: var(--light-color);
   padding: 60px 0 0;
+  margin-top: 50px;
 }
 
 .footer-grid {
@@ -513,6 +514,17 @@ cite {
 .social-icons {
   display: flex;
   gap: 15px;
+}
+
+.social-icons a {
+  color: var(--light-color);
+  font-size: 1.2rem;
+  transition: var(--transition);
+}
+
+.social-icons a:hover {
+  color: var(--primary-color);
+  transform: scale(1.1);
 }
 
 .footer-bottom {
